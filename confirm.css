@@ -1,0 +1,138 @@
+*{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+
+:root {
+        --colorInput : rgb(255, 255, 255);
+}
+
+body{
+        width: 100%;
+        height: 100vh;
+        font-family: 'Montserrat', sans-serif;
+        overflow: hidden;
+}
+
+.app{
+        width: 100%;
+        height: 100%;
+
+}
+
+.background{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+}
+
+.img-bgr{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        
+}
+
+.wrap-form
+{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        gap: 20px;
+        z-index: 1;
+}
+
+#form{
+       width: 100%;
+       height: 100%;
+}
+
+
+.form
+{
+        position: relative;
+        width: 300px;
+        height: 80px;
+
+        user-select: none;
+} 
+.title-password
+{
+        display: block;
+        color: white;
+        margin: 4px 0;
+}
+
+.password
+{
+        width: 100%;
+        height: 30px;   
+        padding: 10px;
+        outline: none;
+        border: 1px solid rgba(133, 133, 133, 0.5);
+        border-radius: 5px;
+        background-color: rgba(252, 252, 252, 0.4);
+        color: rgb(214, 214, 214);
+}
+
+.input{
+        position: relative;
+        width: 100%;
+        height: 30px;
+}
+
+.input .eye
+{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 3%;
+        cursor: pointer;
+        color: white;
+        z-index: 1;
+}
+
+
+.password:focus
+{
+        border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.submit
+{
+        width: 100px;
+        height: 30px;
+        border-radius: 5px;
+        border: 1px solid rgba(163, 163, 163, 0.753);
+        box-shadow: 3px 3px 3px rgba(51, 51, 51, 0.5);
+        background-color: rgb(23, 167, 35);
+        color: white;
+        font-size: 15px;
+        cursor: pointer;
+        text-align: center;
+        
+}
+
+@media all and (max-width: 960px) {
+        .wrap-form{
+                width: 90%;
+        }
+
+        .form {
+                position: relative;
+                width: 90%;
+                height: 50%;
+        }
+        .title-password{
+                font-size: 12px;
+        }
+        .change{
+                align-self: flex-end;
+        }
+}
