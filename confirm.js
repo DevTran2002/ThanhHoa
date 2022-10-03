@@ -3,7 +3,7 @@
                 var formElement = document.querySelector('.form');
                 var inputElement = formElement.querySelector('.password');
                 var changeHref = document.querySelector('.change');
-                var PASSWORD_API_KEY = '19042022';
+                var PASSWORD_API_KEY = '04102022';
 
                 var eye = formElement.querySelector('.eye');
                 var flag = true;
